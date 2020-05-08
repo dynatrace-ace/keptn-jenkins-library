@@ -538,6 +538,7 @@ def waitForEvaluationDoneEvent(Map args) {
                 break;
             default:
                 currentBuild.currentResult = 'FAILURE' 
+                error("Failing because of keptn")
                 break;
         }
     }
