@@ -531,13 +531,13 @@ def waitForEvaluationDoneEvent(Map args) {
     if (setBuildResult) {
         switch(result) {
             case "pass":
-                currentBuild.result = 'SUCCESS' 
+                currentBuild.currentResult = 'SUCCESS' 
                 break;
             case "warning":
-                currentBuild.result = 'UNSTABLE' 
+                currentBuild.currentResult = 'UNSTABLE' 
                 break;
             default:
-                currentBuild.result = 'FAILURE' 
+                currentBuild.currentResult = 'FAILURE' 
                 break;
         }
     }
